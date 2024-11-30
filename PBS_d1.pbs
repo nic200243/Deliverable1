@@ -1,0 +1,29 @@
+#!/bin/bash
+
+#PBS -N Deliverable1			
+
+#PBS -o ./d1.o			
+#PBS -e ./d1.e			
+
+#PBS -q short_cpuQ			
+
+#PBS -l walltime=0:10:00		
+#PBS -l select=1:ncpus=8:ompthreads=8:mem=500mb
+
+module load gcc91			
+
+
+# G++ ALIAS
+g++() {					
+    g++-9.1.0 "$@"
+}
+
+g++ --version				
+lscpu
+
+# Select the working directory (change this line)
+cd /home/n.dellantonio/D1
+
+g++ -fopenmp -o d1C d1.cpp
+
+./d1C

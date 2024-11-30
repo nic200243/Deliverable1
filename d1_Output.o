@@ -1,0 +1,275 @@
+g++-9.1.0 (GCC) 9.1.0
+Copyright (C) 2019 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+Architecture:          x86_64
+CPU op-mode(s):        32-bit, 64-bit
+Byte Order:            Little Endian
+CPU(s):                96
+On-line CPU(s) list:   0-95
+Thread(s) per core:    1
+Core(s) per socket:    24
+Socket(s):             4
+NUMA node(s):          4
+Vendor ID:             GenuineIntel
+CPU family:            6
+Model:                 85
+Model name:            Intel(R) Xeon(R) Gold 6252N CPU @ 2.30GHz
+Stepping:              7
+CPU MHz:               2300.000
+BogoMIPS:              4600.00
+Virtualization:        VT-x
+L1d cache:             32K
+L1i cache:             32K
+L2 cache:              1024K
+L3 cache:              36608K
+NUMA node0 CPU(s):     0,4,8,12,16,20,24,28,32,36,40,44,48,52,56,60,64,68,72,76,80,84,88,92
+NUMA node1 CPU(s):     1,5,9,13,17,21,25,29,33,37,41,45,49,53,57,61,65,69,73,77,81,85,89,93
+NUMA node2 CPU(s):     2,6,10,14,18,22,26,30,34,38,42,46,50,54,58,62,66,70,74,78,82,86,90,94
+NUMA node3 CPU(s):     3,7,11,15,19,23,27,31,35,39,43,47,51,55,59,63,67,71,75,79,83,87,91,95
+Flags:                 fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch epb cat_l3 cdp_l3 invpcid_single intel_ppin ssbd mba rsb_ctxsw ibrs ibpb stibp ibrs_enhanced tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm cqm mpx rdt_a avx512f avx512dq rdseed adx smap clflushopt clwb intel_pt avx512cd avx512bw avx512vl xsaveopt xsavec xgetbv1 cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts pku ospke avx512_vnni md_clear spec_ctrl intel_stibp flush_l1d arch_capabilities
+--- MATRIX SIZE N=16 ---
+---
+Average elapsed execution times of serial implementations evaluated over 10 iterations.
+Avg time_checkSym_seq = 5.19715e-06	| Avg time_transpose_seq = 4.58509e-06
+Avg time_checkSym_imp = 3.10838e-06	| Avg time_transpose_imp = 3.23914e-06
+---
+
+
+---
+Average elapsed execution times of parallel implementations evaluated over 10 iterations using 1 threads.
+Avg time_checkSym_OMP = 1.02296e-05	| Avg time_transpose_OMP = 6.43954e-06
+Speedup checkSym = 0.508048		| Speedup transpose = 0.712021
+Efficiency checkSym = 50.8048%		| Efficiency transpose = 71.2021%
+---
+
+---
+Average elapsed execution times of parallel implementations evaluated over 10 iterations using 2 threads.
+Avg time_checkSym_OMP = 2.29787e-05	| Avg time_transpose_OMP = 5.92954e-06
+Speedup checkSym = 0.226173		| Speedup transpose = 0.773261
+Efficiency checkSym = 11.3086%		| Efficiency transpose = 38.6631%
+---
+
+---
+Average elapsed execution times of parallel implementations evaluated over 10 iterations using 4 threads.
+Avg time_checkSym_OMP = 2.09745e-05	| Avg time_transpose_OMP = 5.46426e-06
+Speedup checkSym = 0.247784		| Speedup transpose = 0.839106
+Efficiency checkSym = 6.19461%		| Efficiency transpose = 20.9776%
+---
+
+---
+Average elapsed execution times of parallel implementations evaluated over 10 iterations using 8 threads.
+Avg time_checkSym_OMP = 3.68685e-05	| Avg time_transpose_OMP = 9.93386e-06
+Speedup checkSym = 0.140965		| Speedup transpose = 0.461562
+Efficiency checkSym = 1.76206%		| Efficiency transpose = 5.76952%
+---
+
+---
+Average elapsed execution times of parallel implementations evaluated over 10 iterations using 16 threads.
+Avg time_checkSym_OMP = 5.13606e-05	| Avg time_transpose_OMP = 1.02699e-05
+Speedup checkSym = 0.10119		| Speedup transpose = 0.44646
+Efficiency checkSym = 0.632435%		| Efficiency transpose = 2.79037%
+---
+
+---
+Average elapsed execution times of parallel implementations evaluated over 10 iterations using 32 threads.
+Avg time_checkSym_OMP = 0.000100315	| Avg time_transpose_OMP = 1.9576e-05
+Speedup checkSym = 0.0518081		| Speedup transpose = 0.234219
+Efficiency checkSym = 0.1619%		| Efficiency transpose = 0.731936%
+---
+
+---
+Average elapsed execution times of parallel implementations evaluated over 10 iterations using 64 threads.
+Avg time_checkSym_OMP = 0.0106277	| Avg time_transpose_OMP = 0.00998236
+Speedup checkSym = 0.000489021		| Speedup transpose = 0.000459319
+Efficiency checkSym = 0.000764096%		| Efficiency transpose = 0.000717686%
+---
+
+
+
+
+
+--- MATRIX SIZE N=512 ---
+---
+Average elapsed execution times of serial implementations evaluated over 10 iterations.
+Avg time_checkSym_seq = 0.00204539	| Avg time_transpose_seq = 0.00193572
+Avg time_checkSym_imp = 0.000915089	| Avg time_transpose_imp = 0.00148133
+---
+
+
+---
+Average elapsed execution times of parallel implementations evaluated over 10 iterations using 1 threads.
+Avg time_checkSym_OMP = 0.00218813	| Avg time_transpose_OMP = 0.00198199
+Speedup checkSym = 0.934765		| Speedup transpose = 0.976657
+Efficiency checkSym = 93.4765%		| Efficiency transpose = 97.6657%
+---
+
+---
+Average elapsed execution times of parallel implementations evaluated over 10 iterations using 2 threads.
+Avg time_checkSym_OMP = 0.00128321	| Avg time_transpose_OMP = 0.00108798
+Speedup checkSym = 1.59396		| Speedup transpose = 1.77918
+Efficiency checkSym = 79.6982%		| Efficiency transpose = 88.9591%
+---
+
+---
+Average elapsed execution times of parallel implementations evaluated over 10 iterations using 4 threads.
+Avg time_checkSym_OMP = 0.00114789	| Avg time_transpose_OMP = 0.000958642
+Speedup checkSym = 1.78186		| Speedup transpose = 2.01923
+Efficiency checkSym = 44.5465%		| Efficiency transpose = 50.4808%
+---
+
+---
+Average elapsed execution times of parallel implementations evaluated over 10 iterations using 8 threads.
+Avg time_checkSym_OMP = 0.000776144	| Avg time_transpose_OMP = 0.00064419
+Speedup checkSym = 2.63532		| Speedup transpose = 3.00489
+Efficiency checkSym = 32.9414%		| Efficiency transpose = 37.5611%
+---
+
+---
+Average elapsed execution times of parallel implementations evaluated over 10 iterations using 16 threads.
+Avg time_checkSym_OMP = 0.000452294	| Avg time_transpose_OMP = 0.00037448
+Speedup checkSym = 4.52225		| Speedup transpose = 5.16908
+Efficiency checkSym = 28.2641%		| Efficiency transpose = 32.3068%
+---
+
+---
+Average elapsed execution times of parallel implementations evaluated over 10 iterations using 32 threads.
+Avg time_checkSym_OMP = 0.000714371	| Avg time_transpose_OMP = 0.000199355
+Speedup checkSym = 2.8632		| Speedup transpose = 9.70992
+Efficiency checkSym = 8.9475%		| Efficiency transpose = 30.3435%
+---
+
+---
+Average elapsed execution times of parallel implementations evaluated over 10 iterations using 64 threads.
+Avg time_checkSym_OMP = 0.0115217	| Avg time_transpose_OMP = 0.0092899
+Speedup checkSym = 0.177525		| Speedup transpose = 0.208368
+Efficiency checkSym = 0.277383%		| Efficiency transpose = 0.325575%
+---
+
+
+
+
+
+--- MATRIX SIZE N=1024 ---
+---
+Average elapsed execution times of serial implementations evaluated over 10 iterations.
+Avg time_checkSym_seq = 0.0115229	| Avg time_transpose_seq = 0.0123388
+Avg time_checkSym_imp = 0.00368065	| Avg time_transpose_imp = 0.0098193
+---
+
+
+---
+Average elapsed execution times of parallel implementations evaluated over 10 iterations using 1 threads.
+Avg time_checkSym_OMP = 0.0115002	| Avg time_transpose_OMP = 0.0125842
+Speedup checkSym = 1.00198		| Speedup transpose = 0.980494
+Efficiency checkSym = 100.198%		| Efficiency transpose = 98.0494%
+---
+
+---
+Average elapsed execution times of parallel implementations evaluated over 10 iterations using 2 threads.
+Avg time_checkSym_OMP = 0.00666595	| Avg time_transpose_OMP = 0.0062939
+Speedup checkSym = 1.72862		| Speedup transpose = 1.96043
+Efficiency checkSym = 86.4312%		| Efficiency transpose = 98.0215%
+---
+
+---
+Average elapsed execution times of parallel implementations evaluated over 10 iterations using 4 threads.
+Avg time_checkSym_OMP = 0.00348216	| Avg time_transpose_OMP = 0.00317055
+Speedup checkSym = 3.30914		| Speedup transpose = 3.89168
+Efficiency checkSym = 82.7284%		| Efficiency transpose = 97.292%
+---
+
+---
+Average elapsed execution times of parallel implementations evaluated over 10 iterations using 8 threads.
+Avg time_checkSym_OMP = 0.00209772	| Avg time_transpose_OMP = 0.00174321
+Speedup checkSym = 5.49307		| Speedup transpose = 7.07818
+Efficiency checkSym = 68.6634%		| Efficiency transpose = 88.4772%
+---
+
+---
+Average elapsed execution times of parallel implementations evaluated over 10 iterations using 16 threads.
+Avg time_checkSym_OMP = 0.00136933	| Avg time_transpose_OMP = 0.00119917
+Speedup checkSym = 8.41502		| Speedup transpose = 10.2895
+Efficiency checkSym = 52.5939%		| Efficiency transpose = 64.3091%
+---
+
+---
+Average elapsed execution times of parallel implementations evaluated over 10 iterations using 32 threads.
+Avg time_checkSym_OMP = 0.0012168	| Avg time_transpose_OMP = 0.000763662
+Speedup checkSym = 9.46983		| Speedup transpose = 16.1574
+Efficiency checkSym = 29.5932%		| Efficiency transpose = 50.4917%
+---
+
+---
+Average elapsed execution times of parallel implementations evaluated over 10 iterations using 64 threads.
+Avg time_checkSym_OMP = 0.0114561	| Avg time_transpose_OMP = 0.00966279
+Speedup checkSym = 1.00583		| Speedup transpose = 1.27694
+Efficiency checkSym = 1.57161%		| Efficiency transpose = 1.99521%
+---
+
+
+
+
+
+--- MATRIX SIZE N=4096 ---
+---
+Average elapsed execution times of serial implementations evaluated over 10 iterations.
+Avg time_checkSym_seq = 0.550036	| Avg time_transpose_seq = 0.482884
+Avg time_checkSym_imp = 0.0614839	| Avg time_transpose_imp = 0.384245
+---
+
+
+---
+Average elapsed execution times of parallel implementations evaluated over 10 iterations using 1 threads.
+Avg time_checkSym_OMP = 0.566159	| Avg time_transpose_OMP = 0.47905
+Speedup checkSym = 0.971521		| Speedup transpose = 1.008
+Efficiency checkSym = 97.1521%		| Efficiency transpose = 100.8%
+---
+
+---
+Average elapsed execution times of parallel implementations evaluated over 10 iterations using 2 threads.
+Avg time_checkSym_OMP = 0.328563	| Avg time_transpose_OMP = 0.273444
+Speedup checkSym = 1.67406		| Speedup transpose = 1.76594
+Efficiency checkSym = 83.7032%		| Efficiency transpose = 88.2968%
+---
+
+---
+Average elapsed execution times of parallel implementations evaluated over 10 iterations using 4 threads.
+Avg time_checkSym_OMP = 0.144528	| Avg time_transpose_OMP = 0.129101
+Speedup checkSym = 3.80575		| Speedup transpose = 3.74037
+Efficiency checkSym = 95.1437%		| Efficiency transpose = 93.5091%
+---
+
+---
+Average elapsed execution times of parallel implementations evaluated over 10 iterations using 8 threads.
+Avg time_checkSym_OMP = 0.0878761	| Avg time_transpose_OMP = 0.0743571
+Speedup checkSym = 6.25922		| Speedup transpose = 6.49412
+Efficiency checkSym = 78.2403%		| Efficiency transpose = 81.1765%
+---
+
+---
+Average elapsed execution times of parallel implementations evaluated over 10 iterations using 16 threads.
+Avg time_checkSym_OMP = 0.0631038	| Avg time_transpose_OMP = 0.0542884
+Speedup checkSym = 8.71636		| Speedup transpose = 8.8948
+Efficiency checkSym = 54.4772%		| Efficiency transpose = 55.5925%
+---
+
+---
+Average elapsed execution times of parallel implementations evaluated over 10 iterations using 32 threads.
+Avg time_checkSym_OMP = 0.0311878	| Avg time_transpose_OMP = 0.0305949
+Speedup checkSym = 17.6362		| Speedup transpose = 15.7831
+Efficiency checkSym = 55.1132%		| Efficiency transpose = 49.3223%
+---
+
+---
+Average elapsed execution times of parallel implementations evaluated over 10 iterations using 64 threads.
+Avg time_checkSym_OMP = 0.0342953	| Avg time_transpose_OMP = 0.0330285
+Speedup checkSym = 16.0382		| Speedup transpose = 14.6202
+Efficiency checkSym = 25.0598%		| Efficiency transpose = 22.8441%
+---
+
+
+
+
+
